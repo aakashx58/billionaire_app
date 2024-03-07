@@ -3,7 +3,7 @@
 A new Flutter project.
 
 ## Screenshot
-<img height="400" src="">
+<img height="400" src="https://github.com/aakashx58/billionaire_app/assets/106716824/82b765ef-66ed-4153-9d1a-8df45f36414b">
 
 ## Getting Started
 
