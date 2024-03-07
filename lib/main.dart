@@ -1,4 +1,5 @@
 import 'package:billionaireapp/add_money_button.dart';
+import 'package:billionaireapp/balance_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -53,27 +54,20 @@ class _MyAppState extends State<MyApp> {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           appBar: AppBar(
+            backgroundColor: Colors.black,
             centerTitle: true,
             title: const Text('Billionaire App'),
           ),
           body: Container(
             padding: const EdgeInsets.all(20),
-            color: Colors.blueGrey[700],
+            color: Colors.black,
             height: double.infinity,
             width: double.infinity,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Expanded(
-                  flex: 9,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('Bank Balance'),
-                      SizedBox(height: 20),
-                      Text('$balance'),
-                    ],
-                  ),
+                BalanceView(
+                  balance: balance,
                 ),
                 AddMoneyButton(addMoneyFunction: addMoney),
               ],

@@ -10,10 +10,13 @@ class AddMoneyButton extends StatelessWidget {
         flex: 1,
         child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.red[700],
+              backgroundColor: Color.fromARGB(255, 0, 255, 13),
               minimumSize: Size(double.infinity, 0),
             ),
             onPressed: addMoneyFunction,
-            child: Text('Add Money')));
+            child: Text(
+              'Add Money',
+              style: TextStyle(color: Colors.white),
+            )));
   }
 }
